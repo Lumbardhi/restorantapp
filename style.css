@@ -2,7 +2,7 @@ body {
   background-image: url("images/background.jpg"), url("city lights");
   background-repeat: no-repeat, repeat;
   width: auto;
-  background-size: 2000px;
+  background-size: 2000px ;
   color: #333;
   font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 0;
@@ -13,6 +13,20 @@ img {
   max-width: 100%;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.card {
+  display: grid;
+  border: 1px solid #999;
+  border-radius: 12px;
+}
+
 .card img {
   object-fit: cover;
   width: 100%;
@@ -20,11 +34,53 @@ img {
   border-radius: 12px 12px 0px 0px;
 }
 
-h1 {
+h1{
   text-align: center;
-  color: #d2b48c;
+  color:#D2B48C;
 }
 .card h2 {
   margin: 0;
-  padding: 0.5rem;
+  padding: .5rem;
+  
+}
+
+.card .content {
+  padding: .5rem;
+    background: antiquewhite;
+    border-radius: 0 0 12px 12px;
+    font-size: 16px;
+}
+.card .button {
+  background-color: darkgray;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 46px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+
+}
+
+.button:hover {
+  background-color: #396eb0;
+  border: none;
+  color: #fc997c;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 46px;
+  cursor: pointer;
+  border-radius: 15px;
+
+}
+
+.card footer {
+  background-color: #333;
+  color: #fff;
+  padding: .5rem;
 }
